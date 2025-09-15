@@ -1,0 +1,16 @@
+a = eval(input())
+b = eval(input())
+x,y = len(b), len(a)
+#Preciso verficar os indíces para que não de erro
+def indice(x,y):
+    if x>y:
+        return y
+    else: 
+        return x
+#Verificar se a igualdade naquele indíce
+def igualdade(a,b):
+    z = False
+    for i in range(indice(x,y)):
+        if b[i] == a[i]:
+            z = True
+    return z
